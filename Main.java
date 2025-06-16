@@ -16,14 +16,14 @@ public class Main {
 		maquinas.add(m2);
 		maquinas.add(m3);
 		maquinas.add(m4);
-		//System.out.println("arreglo de maquinas");
-		//System.out.println(maquinas);
+		
+		
 		
         Backtracking pb = new Backtracking(maquinas, 12);
-        System.out.println("Backtracking");
-        System.out.println("Solución obtenida: secuencia de máquinas");
+        Greedy pg = new Greedy(maquinas, 12);
+    
         pb.resolver();
-
+        pg.resolver();
 	}
 
 }

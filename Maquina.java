@@ -1,6 +1,6 @@
 package TPE;
 
-public class Maquina {
+public class Maquina implements Comparable<Maquina> {
 	private String nombre;
 	private int pieza;
 	
@@ -30,5 +30,8 @@ public class Maquina {
 		return this.nombre + "," + this.pieza;
 	}
 	
+	public int compareTo(Maquina otra) {
+        return Integer.compare(otra.pieza, this.pieza ); // Orden por pieza ascendente
+    }
 	
 }
